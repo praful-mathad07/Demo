@@ -1,0 +1,15 @@
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; /* Modern, clean font */
+}
+
+/* Body Styling */
+body {
+  background-color: #f4f4f4; /* Light background color for better contrast */
+  color: #333; /* Dark text for readability */
+  line-height: 1.6;
+  padding-top: 70px; /* Add top padding to prevent overlap with navbar */
+}

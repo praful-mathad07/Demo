@@ -1,0 +1,201 @@
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; /* Modern, clean font */
+}
+
+/* Body Styling */
+body {
+  background-color: #f4f4f4; /* Light background color for better contrast */
+  color: #333; /* Dark text for readability */
+  line-height: 1.6;
+  padding-top: 70px; /* Add top padding to prevent overlap with navbar */
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* padding: 1rem 2rem; */
+  background-color: #333; /* Dark background */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  color: #fff; /* White text */
+  transition: background-color 0.3s ease;
+}
+
+/* Navbar Links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #5dd62c; /* Light sky blue */
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #5dd62c; /* Bright blue on hover */
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Navbar Actions (Login, Signup) */
+.navbar-actions {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Login Link */
+.login-link {
+  color: #87cefa;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.login-link:hover {
+  color: #32cd32; /* Bright blue on hover */
+}
+
+/* Signup Button */
+.signup-button {
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #5dd62c;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-right: 4px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    border-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 10px; Space between icon and text */
+}
+
+/* Adding an icon to the signup button */
+.signup-button::before {
+  content: url("https://img.icons8.com/ios-filled/50/ffffff/user.png"); /* Icon before the text */
+  font-size: 1.2rem;
+}
+
+/* Button Hover */
+.signup-button:hover {
+  background-color: #32cd32; /* Darker blue on hover */
+  border-color: #32cd32; /* Keep the green border */
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Hero Section */
+.hero {
+  background: url("https://via.placeholder.com/1920x500") no-repeat center
+    center/cover; /* Background image */
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5); /* Subtle dark overlay for better text contrast */
+}
+
+/* Content Section */
+.content {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.content p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+/* Slider Styling (for any visual content like images) */
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.slider {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+
+.slider:hover {
+  transform: scale(1.05); /* Subtle zoom effect */
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.footer a {
+  color: #87cefa;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #1e90ff; /* Bright blue on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .navbar-actions {
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  .hero {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+}
